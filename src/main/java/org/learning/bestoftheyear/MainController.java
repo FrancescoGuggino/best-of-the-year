@@ -13,7 +13,7 @@ public class MainController {
     public String index (Model model) {
 
         String myName = "Francesco Guggino";
-        model.addAllAttributes ("name", myName);
+        model.addAttribute ("name", myName);
 
         return "homepage";
     }
