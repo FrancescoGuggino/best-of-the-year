@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Songs</title>
 </head>
 <body>
   <h1>Songs</h1>
+
+  <ul>
+
+      <li th:each="songs: ${songs}" th:text="|${songs.id} ${songs.title}|"></li>
+
+  </ul>
 </body>
 </html>
